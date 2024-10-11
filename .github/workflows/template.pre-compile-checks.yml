@@ -41,7 +41,7 @@ permissions: read-all
 jobs:
   qa:
     name: "Basic QA"
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-22.04-ppc64le
     container:
       image: mapohl/flink-ci:FLINK-34194
       # --init makes the process in the container being started as an init process which will clean up any daemon processes during shutdown
